@@ -14,12 +14,14 @@ h1 {
   border: 2px solid blue;
   /* text-align: center; */
   /* padding: 0px 20px; */
+  /* width: 100%; */
 }
 
 .bg {
   background-color: #0f130f;
   padding: 0px 20px;
   padding-top: 20px;
+  /* width: 100%; */
 }
 .bg > h2,
 p,
@@ -49,18 +51,34 @@ h2 {
 p {
   padding-bottom: 20px;
 }
-.form-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
 form {
   border: 1px solid #fff7f7;
   background-color: #141a14;
   padding: 20px 10px;
   border-radius: 10px;
 }
+.form-row {
+  flex-direction: row;
+  align-items: flex-start; /* To avoid stretching */
+  margin-bottom: 20px;
+}
+.form-row input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: flex;
+  width: 80%;
+  height: initial;
+  border-radius: 15px;
+  padding: 15px 10px;
+  margin-bottom: 5px;
+  background-color: #e0ebe0;
+}
 form > label {
-  text-align: start;
-  margin-top: 10px;
+  text-align: right;
+  width: 120px;
+  margin-top: 7px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffff;
 }
