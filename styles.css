@@ -19,9 +19,8 @@ h1 {
 
 .bg {
   background-color: #0f130f;
-  padding: 0px 20px;
+  padding: 0px 50px;
   padding-top: 20px;
-  /* width: 100%; */
 }
 .bg > h2,
 p,
@@ -54,8 +53,9 @@ p {
 form {
   border: 1px solid #fff7f7;
   background-color: #141a14;
-  padding: 20px 10px;
+  padding: 10px 20px;
   border-radius: 10px;
+  /* margin: 20px 0px; */
 }
 .form-row {
   flex-direction: row;
@@ -66,19 +66,40 @@ form {
 input[type="email"],
 input[type="password"] {
   display: flex;
-  width: 80%;
+  width: 90%;
   height: initial;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 15px 10px;
   margin-bottom: 5px;
   background-color: #e0ebe0;
+  border: 3px solid #f7f8f7;
 }
 form > label {
   text-align: right;
   width: 120px;
   margin-top: 7px;
   padding-right: 10px;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 14px;
+  font-weight: 500;
   color: #ffff;
+}
+.checkboxBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxBtn > label {
+  font-size: 18px;
+  color: #e1fcd5;
+}
+
+.checkboxBtn > button {
+  margin: 15px 50px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 3px solid #7fff4f;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #7fff4f;
+  color: #0f130f;
 }
