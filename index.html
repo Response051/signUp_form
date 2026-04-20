@@ -10,44 +10,70 @@
     <div class="flex-row">
       <div>
         <h1>hello world</h1>
-        <img src="/images/greenmoon-background.jpg" width="100%" />
+        <!-- <img src="/images/greenmoon-background.jpg" class="img" /> -->
       </div>
-      <div>
+      <div class="bg">
         <h2>Build The future with us ---upload.</h2>
         <p>Create account</p>
         <p>account details</p>
+        <div class="form-row">
+          <form action="" method="post">
+            <label for="first_name">
+              First Name
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="Name"
+              />
+            </label>
+            <label for="last_name">
+              Last Name
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Last Name"
+              />
+            </label>
+            <label for="email">
+              Email
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="@email"
+              />
+            </label>
 
-        <form action="" method="post">
-          <label for="first_name">
-            First Name
-            <input type="text" name="first_name" id="first_name" placeholder="Name" />
-          </label>
-          <label for="last_name">
-            Last Name
-            <input type="text" name="last_name" id="last_name" placeholder="Last Name" />
-          </label>
-          <label for="email">
-            email
-            <input type="email" name="email" id="email" placeholder="@email" />
-          </label>
+            <label for="username">
+              Username
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+              />
+            </label>
+            <label for="password"
+              >Password
 
-          <label for="username">
-            username
-            <input type="text" name="username" id="username" placeholder="username" />
-          </label>
-          <label for="password"
-            >password
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+              />
+            </label>
 
-            <input type="password" name="password" id="password" placeholder="password" />
-          </label>
+            <label for="checkbox">
+              I agree to the Terms and Privacy Policy.
 
-          <label for="checkbox">
-            I agree to the Terms and Privacy Policy.
-
-            <input type="checkbox" name="checkbox" id="checkbox" />
-          </label>
-          <button type="submit" class="button">Create Account</button>
-        </form>
+              <input type="checkbox" name="checkbox" id="checkbox" />
+            </label>
+            <button type="submit" class="button">Create Account</button>
+          </form>
+        </div>
         <p>
           Already have an account? <span><a href="">log in</a></span>
         </p>
