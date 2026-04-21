@@ -74,6 +74,12 @@ input[type="password"] {
   background-color: #e0ebe0;
   border: 3px solid #f7f8f7;
 }
+input:user-invalid {
+  border-color: red;
+}
+input:user-valid {
+  border-color: green;
+}
 form > label {
   text-align: right;
   width: 120px;
